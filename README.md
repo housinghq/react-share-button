@@ -5,16 +5,16 @@
 
 ##Features
 
-1. Web 
-1. AutoPlay
-1. Drag and swipe
+1. Web Share Api 
+1. Share Modal Fallback for other browsers 
+1. Share via Whatsapp, FB, Twitter, Mail or Copy on Clipboard
 
 ## Installation
 This library works with [react-lazy-card](https://github.com/housinghq/react-lazy-card) (don't
 worry. they are very light even when used together . react-lazy-card may serve other purposes in the app so we separated it).
 
 ```
-npm install --save react-photostory react-lazy-card
+npm install --save react-share-button
 ```
 
 ## Basic Usage
@@ -36,21 +36,14 @@ import ShareBtn from 'react-share-button';
 
 ## Options
 
-### &lt;Swipe/&gt; Component
+### &lt;ShareBtn/&gt; Component
 
 prop|default|description
 ----|-------|-----------
-className|''|Custom classname
-initialIndex|0|initially visible slide index
-autoPlay|false|whether to display slide show or not
-overScan|0|Number of Slide offsets to load excluding the current slide.If its 1 it will load current, current+-1
-onSwipe|({initialIndex, currentIndex})| function executed whenever the current slide changes
-onClick|{index}|function executed when a slide is clicked
-prev|&lt;button&gt;PREV&lt;/button&gt;|React element to replace the PREV button
-next|&lt;button&gt;NEXT&lt;/button&gt;|React element to replace the NEXT button
-threshold|0.5|Ratio of carousel width one should drag to make successful swipe
-responsive|false|whether or not to listen to window resize event
-renderFirst|true|don't lazy load the initial slide
+className|''|Custom classnamem, you can style your button with this
+url|''|The URL you want to share
+text|''|The Text before the URL (E.g. Hey checkout this awesome property!!)
+displayText| Share |Any text you wanna write on button like Share Property
 
 
 ### Development

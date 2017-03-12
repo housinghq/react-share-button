@@ -158,6 +158,14 @@ ShareBtn.propTypes = {
   displayText: React.PropTypes.string
 }
 
+ShareBtn.defaultProps = {
+  url: '',
+  text: '',
+  className: '',
+  displayText: Share
+}
+
+
 SharePopup.propTypes = {
   url: React.PropTypes.string,
   text: React.PropTypes.string,
