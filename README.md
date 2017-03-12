@@ -10,8 +10,6 @@
 1. Share via Whatsapp, FB, Twitter, Mail or Copy on Clipboard
 
 ## Installation
-This library works with [react-lazy-card](https://github.com/housinghq/react-lazy-card) (don't
-worry. they are very light even when used together . react-lazy-card may serve other purposes in the app so we separated it).
 
 ```
 npm install --save react-share-button
