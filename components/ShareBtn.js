@@ -26,10 +26,11 @@ class SharePopup extends React.Component {
   }
 
   whatsappClicked (e) {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     let link = ''
-    if (document.body.dataset.os === 'android') {
+    if (/android/i.test(userAgent)) {
       link = 'https://play.google.com/store/apps/details?id=com.whatsapp'
-    } else if (document.body.dataset.os === 'iOS') {
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       link = 'https://itunes.apple.com/app/id310633997'
     }
     const delay = 1000
@@ -100,7 +101,7 @@ export default class ShareBtn extends React.Component {
   }
 
   toggleShare () {
-    if (!this.state.shareModalOpen) {
+    if (!this.state.shareModalOpen && this.props.onShareBtnClick) {
       this.props.onShareBtnClick()
     }
     if (navigator && navigator.share !== undefined) {
@@ -143,7 +144,7 @@ ShareBtn.defaultProps = {
   url: '',
   text: '',
   className: '',
-  displayText: Share,
+  displayText: 'Share',
   onShareBtnClick: () => {}
 }
 
@@ -156,5 +157,7 @@ SharePopup.propTypes = {
 }
 
 ShareBtn.defaultProps = {
-  sharedBy: () => {}
+  sharedBy: (medium) => {
+    console.log('Shared via ', medium)
+  }
 }
