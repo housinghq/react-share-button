@@ -26,7 +26,7 @@ class SharePopup extends React.Component {
   }
 
   whatsappClicked (e) {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera
     let link = ''
     if (/android/i.test(userAgent)) {
       link = 'https://play.google.com/store/apps/details?id=com.whatsapp'
