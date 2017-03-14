@@ -5,7 +5,7 @@
 
 ##Features
 
-1. Web Share Api 
+1. [Web Share Api](https://developers.google.com/web/updates/2016/10/navigator-share)
 1. Share Modal Fallback for other browsers 
 1. Share via Whatsapp, FB, Twitter, Mail or Copy on Clipboard
 
