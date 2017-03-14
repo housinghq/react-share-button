@@ -1,7 +1,7 @@
 {
-  "name": "react-mobile-share-btn",
-  "description": "A mobile optimised lighweight share button with app deep linking written in React",
-  "main": "dist/index.j",
+  "name": "react-share-btn",
+  "description": "A lightweight React Share Button for mobile web with web share api integration, native intent support and fallback",
+  "main": "dist/index.js",
   "jsnext:main": "components/index.js",
   "module": "components/index.js",
   "files": [
@@ -79,7 +79,6 @@
     "sinon": "^1.17.6"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
     "react": "^15.x.x",
     "react-dom": "^15.3.2",
     "react-auto-bind": "^0.2.0"

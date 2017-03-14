@@ -8,19 +8,6 @@ class SharePopup extends React.Component {
     autoBind(this)
   }
 
-  track (medium) {
-    // const trackingData = {
-    //   category: 'share',
-    //   action: 'open_share',
-    //   id: this.props.id,
-    //   source: 'share_button',
-    //   medium: medium,
-    //   service_type: this.props.service
-    // }
-    this.props.toggleShare()
-    // this.props.trackingActions.send(trackingData)
-  }
-
   copyClicked (e) {
     const t = e.currentTarget
     const c = t.dataset.copytarget
