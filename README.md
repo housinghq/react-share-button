@@ -42,6 +42,8 @@ className|''|Custom classnamem, you can style your button with this
 url|''|The URL you want to share
 text|''|The Text before the URL (E.g. Hey checkout this awesome property!!)
 displayText| Share |Any text you wanna write on button like Share Property
+onShareBtnClick| () => {} |A callback function when share button is clicked
+sharedBy| (medium) => {console.log('shared via ', medium)}|A callback function when user clicks on any share medium from share modal
 
 
 ### Development

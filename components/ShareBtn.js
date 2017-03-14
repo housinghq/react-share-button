@@ -35,7 +35,7 @@ class SharePopup extends React.Component {
         alert('Please copy manually')
       }
     }
-    this.track('copy')
+    this.props.sharedBy('copy')
   }
 
   whatsappClicked (e) {
@@ -52,19 +52,19 @@ class SharePopup extends React.Component {
       if ((this.visibility && this.visibility.isHidden()) || (end - start >= delay * 2)) return
       window.open(link, '_blank')
     }, delay)
-    this.track('whatsapp')
+    this.props.sharedBy('whatsapp')
   }
 
   fbClicked () {
-    this.track('fb')
+    this.props.sharedBy('fb')
   }
 
   twitterClicked () {
-    this.track('twitter')
+    this.props.sharedBy('twitter')
   }
 
   gmailClicked () {
-    this.track('gmail')
+    this.props.sharedBy('gmail')
   }
 
   render () {
@@ -114,14 +114,7 @@ export default class ShareBtn extends React.Component {
 
   toggleShare () {
     if (!this.state.shareModalOpen) {
-      // const trackingData = {
-      //   category: 'share',
-      //   action: 'share',
-      //   id: this.props.id,
-      //   source: 'share_button',
-      //   service_type: this.props.service
-      // }
-      // this.props.trackingActions.send(trackingData)
+      this.props.onShareBtnClick()
     }
     if (navigator && navigator.share !== undefined) {
       navigator.share({
@@ -155,20 +148,26 @@ ShareBtn.propTypes = {
   url: React.PropTypes.string,
   text: React.PropTypes.string,
   className: React.PropTypes.string,
-  displayText: React.PropTypes.string
+  displayText: React.PropTypes.string,
+  onShareBtnClick: React.PropTypes.func
 }
 
 ShareBtn.defaultProps = {
   url: '',
   text: '',
   className: '',
-  displayText: Share
+  displayText: Share,
+  onShareBtnClick: () => {}
 }
-
 
 SharePopup.propTypes = {
   url: React.PropTypes.string,
   text: React.PropTypes.string,
   shareModalOpen: React.PropTypes.bool,
-  toggleShare: React.PropTypes.func
+  toggleShare: React.PropTypes.func,
+  sharedBy: React.PropTypes.func
+}
+
+ShareBtn.defaultProps = {
+  sharedBy: () => {}
 }
