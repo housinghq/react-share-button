@@ -55,8 +55,8 @@ sharedBy| (medium) => {console.log('shared via ', medium)}|A callback function w
 
 ### Preview
 <p align="center">
-  <p display="inline-block" margin-right="12"><img src="web-api.png" width="320" height="560"/></p>
-  <p display="inline-block"><img src="modal.png" width="320" height="560"/></p>
+  <p align="left" display="inline-block" margin-right="12"><img src="web-api.png" width="320" height="560"/></p>
+  <p align="right" display="inline-block"><img src="modal.png" width="320" height="560"/></p>
 </p>
 
 ### Development
