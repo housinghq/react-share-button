@@ -54,10 +54,8 @@ onShareBtnClick| () => {} |A callback function when share button is clicked
 sharedBy| (medium) => {console.log('shared via ', medium)}|A callback function when user clicks on any share medium from share modal
 
 ### Preview
-<p align="center">
-  <p align="left" display="inline-block" margin-right="12"><img src="web-api.png" width="320" height="560"/></p>
-  <p align="right" display="inline-block"><img src="modal.png" width="320" height="560"/></p>
-</p>
+<p align="left" display="inline-block" margin-right="12"><img src="web-api.png" width="320" height="560"/></p>
+<p align="right" display="inline-block"><img src="modal.png" width="320" height="560"/></p>
 
 ### Development
 ```
