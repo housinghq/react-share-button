@@ -16,6 +16,14 @@ npm install --save react-share-button
 ```
 
 ## Basic Usage
+
+To get web-share API on your origin just [requesting a token for your origin.](https://docs.google.com/forms/d/e/1FAIpQLSfO0_ptFl8r8G0UFhT0xhV17eabG-erUWBDiKSRDTqEZ_9ULQ/viewform_)
+You will get an email within 24 hrs with you key, then just add a meta tag
+```
+<meta http-equiv="origin-trial" content="**insert your token as provided in the the email here**">
+```
+Know more about [OriginTrials](https://github.com/jpchase/OriginTrials/blob/gh-pages/developer-guide.md) 
+
 **JSX**:
 ```js
 import ShareBtn from 'react-share-button';
@@ -44,6 +52,9 @@ text|''|The Text before the URL (E.g. Hey checkout this awesome property!!)
 displayText| Share |Any text you wanna write on button like Share Property
 onShareBtnClick| () => {} |A callback function when share button is clicked
 sharedBy| (medium) => {console.log('shared via ', medium)}|A callback function when user clicks on any share medium from share modal
+
+### Preview
+
 
 
 ### Development
