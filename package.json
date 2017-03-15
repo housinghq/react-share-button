@@ -1,5 +1,5 @@
 {
-  "name": "react-share-btn",
+  "name": "react-share-button",
   "description": "A lightweight React Share Button for mobile web with web share api integration, native intent support and fallback",
   "main": "dist/index.js",
   "jsnext:main": "components/index.js",
@@ -88,5 +88,5 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  "version": "0.1.0"
+  "version": "0.0.2"
 }

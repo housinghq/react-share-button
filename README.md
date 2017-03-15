@@ -54,8 +54,8 @@ onShareBtnClick| () => {} |A callback function when share button is clicked
 sharedBy| (medium) => {console.log('shared via ', medium)}|A callback function when user clicks on any share medium from share modal
 
 ### Preview
-
-
+![Alt text](/web-api.png?raw=true "Native share drawer via Web-Share Api")
+![Alt text](/modal.png?raw=true "Fallback share Modal")
 
 ### Development
 ```
