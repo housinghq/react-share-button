@@ -3,7 +3,7 @@
 > A lightweight React Share Button for mobile web with web share api integration, native intent support and fallback.
 
 <div style='text-align:center;'>
-  <span display="inline-block"><img src="demo.gif" width="320" height="560"/></span>
+  <span display="inline-block"><img src="./demo.gif" width="320" height="560"/></span>
 </div>
 
 ## Features
