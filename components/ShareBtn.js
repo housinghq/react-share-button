@@ -152,7 +152,6 @@ SharePopup.propTypes = {
   url: React.PropTypes.string,
   text: React.PropTypes.string,
   shareModalOpen: React.PropTypes.bool,
-  toggleShare: React.PropTypes.func,
   sharedBy: React.PropTypes.func
 }
 
